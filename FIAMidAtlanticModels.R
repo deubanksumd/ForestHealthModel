@@ -467,7 +467,7 @@ F24Labels <- c("RAD x ForestType1","RAD x ForestType2","RAD x ForestType3","RAD 
                "MAT x ForestType1","MAT x ForestType2","MAT x ForestType3","MAT x ForestType4",
                "Intercept x ForestType1","Intercept x ForestType2","Intercept x ForestType3","Intercept x ForestType4",
                "RAD Slope", "RHUM Slope","Elevation Slope","PPT Slope","MAT Slope", "Intercept","Soil Order 1 Offset","Soil Order 2 Offset",
-               "Soil Order 3 Offset","Soil Order 4 Offset","Soil Order 5 Offset","Soil Order 6 Offset","FAD 1 Offset","FAD 2 Offset","FAD 3 Offset",
+               "Soil Order 3 Offset","Soil Order 4 Offset","Soil Order 5 Offset","Soil Order 6 Offset","Soil Order 7 Offset","FAD 1 Offset","FAD 2 Offset","FAD 3 Offset",
                "FAD 4 Offset","FAD 5 Offset","Soil Mean","FAD Mean","SD Intercept","SD MAT","SD PPT","SD Elevation","SD RHUM","SD RAD","SD Soil",
                "SD FAD","SD Model")
 par(mar=c(8,6,6,2)+.1)
@@ -2829,21 +2829,21 @@ SQIMod_beta <- ulam(
 )
 
 SQILabels <- c("RAD x ForestGroup1","RAD x ForestGroup2","RAD x ForestGroup3","RAD x ForestGroup4","RAD x ForestGroup5","RAD x ForestGroup6","RAD x ForestGroup7","RAD x ForestGroup8",
-               "RAD x ForestGroup9","RAD x ForestGroup10","RAD x ForestGroup11","RAD x ForestGroup12",
-               "RHUM x ForestGroup1","RHUM x ForestGroup2","RHUM x ForestGroup3","RHUM x ForestGroup4","RHUM x ForestGroup5","RHUM x ForestGroup6","RHUM x ForestGroup7","RHUM x ForestGroup8",
-               "RHUM x ForestGroup9","RHUM x ForestGroup10","RHUM x ForestGroup11","RHUM x ForestGroup12",
-               "Elevation x ForestGroup1","Elevation x ForestGroup2","Elevation x ForestGroup3","Elevation x ForestGroup4","Elevation x ForestGroup5","Elevation x ForestGroup6",
-               "Elevation x ForestGroup7","Elevation x ForestGroup8","Elevation x ForestGroup9","Elevation x ForestGroup10","Elevation x ForestGroup11","Elevation x ForestGroup12",
-               "PPT x ForestGroup1","PPT x ForestGroup2","PPT x ForestGroup3","PPT x ForestGroup4","PPT x ForestGroup5","PPT x ForestGroup6","PPT x ForestGroup7","PPT x ForestGroup8",
-               "PPT x ForestGroup9","PPT x ForestGroup10","PPT x ForestGroup11","PPT x ForestGroup12",
-               "MAT x ForestGroup1","MAT x ForestGroup2","MAT x ForestGroup3","MAT x ForestGroup4","MAT x ForestGroup5","MAT x ForestGroup6","MAT x ForestGroup7","MAT x ForestGroup8",
-               "MAT x ForestGroup9","MAT x ForestGroup10","MAT x ForestGroup11","MAT x ForestGroup12",
-               "Intercept x ForestGroup1","Intercept x ForestGroup2","Intercept x ForestGroup3","Intercept x ForestGroup4","Intercept x ForestGroup5","Intercept x ForestGroup6",
-               "Intercept x ForestGroup7","Intercept x ForestGroup8","Intercept x ForestGroup9","Intercept x ForestGroup10","Intercept x ForestGroup11","Intercept x ForestGroup12",
-               "RAD Slope", "RHUM Slope","Elevation Slope","PPT Slope","MAT Slope", "Intercept","Soil Order 1 Offset","Soil Order 2 Offset",
-               "Soil Order 3 Offset","Soil Order 4 Offset","Soil Order 5 Offset","Soil Order 6 Offset","FAD 1 Offset","FAD 2 Offset","FAD 3 Offset",
-               "FAD 4 Offset","FAD 5 Offset","Soil Mean","FAD Mean","SD Intercept","SD MAT","SD PPT","SD Elevation","SD RHUM","SD RAD","SD Soil",
-               "SD FAD")
+                 "RAD x ForestGroup9","RAD x ForestGroup10","RAD x ForestGroup11","RAD x ForestGroup12",
+                 "RHUM x ForestGroup1","RHUM x ForestGroup2","RHUM x ForestGroup3","RHUM x ForestGroup4","RHUM x ForestGroup5","RHUM x ForestGroup6","RHUM x ForestGroup7","RHUM x ForestGroup8",
+                 "RHUM x ForestGroup9","RHUM x ForestGroup10","RHUM x ForestGroup11","RHUM x ForestGroup12",
+                 "Elevation x ForestGroup1","Elevation x ForestGroup2","Elevation x ForestGroup3","Elevation x ForestGroup4","Elevation x ForestGroup5","Elevation x ForestGroup6",
+                 "Elevation x ForestGroup7","Elevation x ForestGroup8","Elevation x ForestGroup9","Elevation x ForestGroup10","Elevation x ForestGroup11","Elevation x ForestGroup12",
+                 "PPT x ForestGroup1","PPT x ForestGroup2","PPT x ForestGroup3","PPT x ForestGroup4","PPT x ForestGroup5","PPT x ForestGroup6","PPT x ForestGroup7","PPT x ForestGroup8",
+                 "PPT x ForestGroup9","PPT x ForestGroup10","PPT x ForestGroup11","PPT x ForestGroup12",
+                 "MAT x ForestGroup1","MAT x ForestGroup2","MAT x ForestGroup3","MAT x ForestGroup4","MAT x ForestGroup5","MAT x ForestGroup6","MAT x ForestGroup7","MAT x ForestGroup8",
+                 "MAT x ForestGroup9","MAT x ForestGroup10","MAT x ForestGroup11","MAT x ForestGroup12",
+                 "Intercept x ForestGroup1","Intercept x ForestGroup2","Intercept x ForestGroup3","Intercept x ForestGroup4","Intercept x ForestGroup5","Intercept x ForestGroup6",
+                 "Intercept x ForestGroup7","Intercept x ForestGroup8","Intercept x ForestGroup9","Intercept x ForestGroup10","Intercept x ForestGroup11","Intercept x ForestGroup12",
+                 "RAD Slope", "RHUM Slope","Elevation Slope","PPT Slope","MAT Slope", "Intercept","Soil Order 1 Offset","Soil Order 2 Offset",
+                 "Soil Order 3 Offset","Soil Order 4 Offset","Soil Order 5 Offset","Soil Order 6 Offset","FAD 1 Offset","FAD 2 Offset","FAD 3 Offset",
+                 "FAD 4 Offset","FAD 5 Offset","Soil Mean","FAD Mean","SD Intercept","SD MAT","SD PPT","SD Elevation","SD RHUM","SD RAD","SD Soil",
+                 "SD FAD")
 #plot(precis(SQIMod_beta, depth=2), labels=SQILabels, main= "Model Parameter Estimates, Soil Quality Index Model")
 precisvaluesSQI <- data.frame(precis(SQIMod_beta, depth=2))
 write.csv(precisvaluesSQI, "precisValsSQI.csv")
@@ -2874,3 +2874,530 @@ for ( i in 1:nrow(RandomSQI) ) lines( rep(RandomSQI$ActualVals[i],2) , RandSQIPI
 abline(SQline, col = "red")
 summary(SQline)
 rmse(SQIline$ActualVals,SQIline$PredVals)
+
+#Visualize posterior distribution statistics
+#Carb
+precisCarb1 <- read.csv("precisValsCarb1.csv")
+precisCarb1[,1]<-F1Labels
+#subset to only predictor variables
+precisCarb1 <- precisCarb1[c(1:20,31:41),]
+#plot
+par(mar=c(6,6,5,3)+0.1)
+ggplot(precisCarb1, aes(x=precisCarb1[[2]], y=factor(1:nrow(precisCarb1),level=nrow(precisCarb1):1,labels = rev(precisCarb1[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisCarb1[[4]],xmax=precisCarb1[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Carbon Storage White/Red/Jack Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisCarb5 <- read.csv("precisValsCarb5.csv")
+precisCarb5[,1]<-F5Labels
+#subset to only predictor variables
+precisCarb5 <- precisCarb5[c(1:20,31:41),]
+#plot
+ggplot(precisCarb5, aes(x=precisCarb5[[2]], y=factor(1:nrow(precisCarb5),level=nrow(precisCarb5):1,labels = rev(precisCarb5[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisCarb5[[4]],xmax=precisCarb5[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Carbon Storage Loblolly/Shortleaf Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisCarb20 <- read.csv("precisValsCarb20.csv")
+precisCarb20[,1]<-F20Labels
+#subset to only predictor variables
+precisCarb20 <- precisCarb20[c(1:30,43:53),]
+#plot
+ggplot(precisCarb20, aes(x=precisCarb20[[2]], y=factor(1:nrow(precisCarb20),level=nrow(precisCarb20):1,labels = rev(precisCarb20[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisCarb20[[4]],xmax=precisCarb20[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Carbon Storage Oak/Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisCarb21 <- read.csv("precisValsCarb21.csv")
+precisCarb21[,1]<-F21Labels
+#subset to only predictor variables
+precisCarb21 <- precisCarb21[c(1:95,121:132),]
+#plot
+ggplot(precisCarb21, aes(x=precisCarb21[[2]], y=factor(1:nrow(precisCarb21),level=nrow(precisCarb21):1,labels = rev(precisCarb21[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisCarb21[[4]],xmax=precisCarb21[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Carbon Storage Oak/Hickory")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=10))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisCarb23 <- read.csv("precisValsCarb23.csv")
+precisCarb23[,1]<-F23Labels
+#subset to only predictor variables
+precisCarb23 <- precisCarb23[c(1:45,61:71),]
+#plot
+ggplot(precisCarb23, aes(x=precisCarb23[[2]], y=factor(1:nrow(precisCarb23),level=nrow(precisCarb23):1,labels = rev(precisCarb23[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisCarb23[[4]],xmax=precisCarb23[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Carbon Storage Elm/Ash/Cottonwood")+theme_classic()+  
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisCarb24 <- read.csv("precisValsCarb24.csv")
+precisCarb24[,1]<-F24Labels
+#subset to only predictor variables
+precisCarb24 <- precisCarb24[c(1:20,31:42),]
+#plot
+ggplot(precisCarb24, aes(x=precisCarb24[[2]], y=factor(1:nrow(precisCarb24),level=nrow(precisCarb24):1,labels = rev(precisCarb24[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisCarb24[[4]],xmax=precisCarb24[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Carbon Storage Maple/Beech/Birch")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+#Hill
+precisHill1 <- read.csv("precisValsHill1.csv")
+precisHill1[,1]<-F1Labels
+#subset to only predictor variables
+precisHill1 <- precisHill1[c(1:20,31:41),]
+#plot
+par(mar=c(6,6,5,3)+0.1)
+ggplot(precisHill1, aes(x=precisHill1[[2]], y=factor(1:nrow(precisHill1),level=nrow(precisHill1):1,labels = rev(precisHill1[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisHill1[[4]],xmax=precisHill1[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Hill Shannon's Index White/Red/Jack Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisHill5 <- read.csv("precisValsHill5.csv")
+precisHill5[,1]<-F5Labels
+#subset to only predictor variables
+precisHill5 <- precisHill5[c(1:20,31:41),]
+#plot
+ggplot(precisHill5, aes(x=precisHill5[[2]], y=factor(1:nrow(precisHill5),level=nrow(precisHill5):1,labels = rev(precisHill5[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisHill5[[4]],xmax=precisHill5[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Hill Shannon's Index Loblolly/Shortleaf Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisHill20 <- read.csv("precisValsHill20.csv")
+precisHill20[,1]<-F20Labels
+#subset to only predictor variables
+precisHill20 <- precisHill20[c(1:30,43:53),]
+#plot
+ggplot(precisHill20, aes(x=precisHill20[[2]], y=factor(1:nrow(precisHill20),level=nrow(precisHill20):1,labels = rev(precisHill20[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisHill20[[4]],xmax=precisHill20[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Hill Shannon's Index Oak/Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisHill21 <- read.csv("precisValsHill21.csv")
+precisHill21[,1]<-F21Labels
+#subset to only predictor variables
+precisHill21 <- precisHill21[c(1:95,121:132),]
+#plot
+ggplot(precisHill21, aes(x=precisHill21[[2]], y=factor(1:nrow(precisHill21),level=nrow(precisHill21):1,labels = rev(precisHill21[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisHill21[[4]],xmax=precisHill21[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Hill Shannon's Index Oak/Hickory")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=10))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisHill23 <- read.csv("precisValsHill23.csv")
+precisHill23[,1]<-F23Labels
+#subset to only predictor variables
+precisHill23 <- precisHill23[c(1:45,61:71),]
+#plot
+ggplot(precisHill23, aes(x=precisHill23[[2]], y=factor(1:nrow(precisHill23),level=nrow(precisHill23):1,labels = rev(precisHill23[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisHill23[[4]],xmax=precisHill23[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Hill Shannon's Index Elm/Ash/Cottonwood")+theme_classic()+  
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisHill24 <- read.csv("precisValsHill24.csv")
+precisHill24[,1]<-F24Labels
+#subset to only predictor variables
+precisHill24 <- precisHill24[c(1:20,31:42),]
+#plot
+ggplot(precisHill24, aes(x=precisHill24[[2]], y=factor(1:nrow(precisHill24),level=nrow(precisHill24):1,labels = rev(precisHill24[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisHill24[[4]],xmax=precisHill24[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Hill Shannon's Index Maple/Beech/Birch")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+#Jacc
+precisJacc1 <- read.csv("precisValsJacc1.csv")
+precisJacc1[,1]<-F1Labels
+#subset to only predictor variables
+precisJacc1 <- precisJacc1[c(1:20,31:41),]
+#plot
+par(mar=c(6,6,5,3)+0.1)
+ggplot(precisJacc1, aes(x=precisJacc1[[2]], y=factor(1:nrow(precisJacc1),level=nrow(precisJacc1):1,labels = rev(precisJacc1[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisJacc1[[4]],xmax=precisJacc1[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Jaccard's Similarity Index White/Red/Jack Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisJacc5 <- read.csv("precisValsJacc5.csv")
+precisJacc5[,1]<-F5Labels
+#subset to only predictor variables
+precisJacc5 <- precisJacc5[c(1:20,31:41),]
+#plot
+ggplot(precisJacc5, aes(x=precisJacc5[[2]], y=factor(1:nrow(precisJacc5),level=nrow(precisJacc5):1,labels = rev(precisJacc5[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisJacc5[[4]],xmax=precisJacc5[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Jaccard's Similarity Index Loblolly/Shortleaf Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisJacc20 <- read.csv("precisValsJacc20.csv")
+precisJacc20[,1]<-F20Labels
+#subset to only predictor variables
+precisJacc20 <- precisJacc20[c(1:30,43:53),]
+#plot
+ggplot(precisJacc20, aes(x=precisJacc20[[2]], y=factor(1:nrow(precisJacc20),level=nrow(precisJacc20):1,labels = rev(precisJacc20[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisJacc20[[4]],xmax=precisJacc20[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Jaccard's Similarity Index Oak/Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisJacc21 <- read.csv("precisValsJacc21.csv")
+precisJacc21[,1]<-F21Labels
+#subset to only predictor variables
+precisJacc21 <- precisJacc21[c(1:95,121:132),]
+#plot
+ggplot(precisJacc21, aes(x=precisJacc21[[2]], y=factor(1:nrow(precisJacc21),level=nrow(precisJacc21):1,labels = rev(precisJacc21[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisJacc21[[4]],xmax=precisJacc21[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Jaccard's Similarity Index Oak/Hickory")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=10))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisJacc23 <- read.csv("precisValsJacc23.csv")
+precisJacc23[,1]<-F23Labels
+#subset to only predictor variables
+precisJacc23 <- precisJacc23[c(1:45,61:71),]
+#plot
+ggplot(precisJacc23, aes(x=precisJacc23[[2]], y=factor(1:nrow(precisJacc23),level=nrow(precisJacc23):1,labels = rev(precisJacc23[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisJacc23[[4]],xmax=precisJacc23[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Jaccard's Similarity Index Elm/Ash/Cottonwood")+theme_classic()+  
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisJacc24 <- read.csv("precisValsJacc24.csv")
+precisJacc24[,1]<-F24Labels
+#subset to only predictor variables
+precisJacc24 <- precisJacc24[c(1:20,31:42),]
+#plot
+ggplot(precisJacc24, aes(x=precisJacc24[[2]], y=factor(1:nrow(precisJacc24),level=nrow(precisJacc24):1,labels = rev(precisJacc24[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisJacc24[[4]],xmax=precisJacc24[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Jaccard's Similarity Index Maple/Beech/Birch")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+#MPD
+precisMPD1 <- read.csv("precisValsMPD1.csv")
+precisMPD1[,1]<-F1Labels
+#subset to only predictor variables
+precisMPD1 <- precisMPD1[c(1:20,31:41),]
+#plot
+par(mar=c(6,6,5,3)+0.1)
+ggplot(precisMPD1, aes(x=precisMPD1[[2]], y=factor(1:nrow(precisMPD1),level=nrow(precisMPD1):1,labels = rev(precisMPD1[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMPD1[[4]],xmax=precisMPD1[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Mean Pairwise Distance White/Red/Jack Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMPD5 <- read.csv("precisValsMPD5.csv")
+precisMPD5[,1]<-F5Labels
+#subset to only predictor variables
+precisMPD5 <- precisMPD5[c(1:20,31:41),]
+#plot
+ggplot(precisMPD5, aes(x=precisMPD5[[2]], y=factor(1:nrow(precisMPD5),level=nrow(precisMPD5):1,labels = rev(precisMPD5[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMPD5[[4]],xmax=precisMPD5[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Mean Pairwise Distance Loblolly/Shortleaf Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMPD20 <- read.csv("precisValsMPD20.csv")
+precisMPD20[,1]<-F20Labels
+#subset to only predictor variables
+precisMPD20 <- precisMPD20[c(1:30,43:53),]
+#plot
+ggplot(precisMPD20, aes(x=precisMPD20[[2]], y=factor(1:nrow(precisMPD20),level=nrow(precisMPD20):1,labels = rev(precisMPD20[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMPD20[[4]],xmax=precisMPD20[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Mean Pairwise Distance Oak/Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMPD21 <- read.csv("precisValsMPD21.csv")
+precisMPD21[,1]<-F21Labels
+#subset to only predictor variables
+precisMPD21 <- precisMPD21[c(1:95,121:132),]
+#plot
+ggplot(precisMPD21, aes(x=precisMPD21[[2]], y=factor(1:nrow(precisMPD21),level=nrow(precisMPD21):1,labels = rev(precisMPD21[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMPD21[[4]],xmax=precisMPD21[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Mean Pairwise Distance Oak/Hickory")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=10))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMPD23 <- read.csv("precisValsMPD23.csv")
+precisMPD23[,1]<-F23Labels
+#subset to only predictor variables
+precisMPD23 <- precisMPD23[c(1:45,61:71),]
+#plot
+ggplot(precisMPD23, aes(x=precisMPD23[[2]], y=factor(1:nrow(precisMPD23),level=nrow(precisMPD23):1,labels = rev(precisMPD23[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMPD23[[4]],xmax=precisMPD23[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Mean Pairwise Distance Elm/Ash/Cottonwood")+theme_classic()+  
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMPD24 <- read.csv("precisValsMPD24.csv")
+precisMPD24[,1]<-F24Labels
+#subset to only predictor variables
+precisMPD24 <- precisMPD24[c(1:20,31:42),]
+#plot
+ggplot(precisMPD24, aes(x=precisMPD24[[2]], y=factor(1:nrow(precisMPD24),level=nrow(precisMPD24):1,labels = rev(precisMPD24[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMPD24[[4]],xmax=precisMPD24[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Mean Pairwise Distance Maple/Beech/Birch")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+#Mort
+precisMort1 <- read.csv("precisValsMort1.csv")
+precisMort1[,1]<-F1LabelsMort
+#subset to only predictor variables
+precisMort1 <- precisMort1[c(1:24,36:46),]
+#plot
+par(mar=c(6,6,5,3)+0.1)
+ggplot(precisMort1, aes(x=precisMort1[[2]], y=factor(1:nrow(precisMort1),level=nrow(precisMort1):1,labels = rev(precisMort1[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMort1[[4]],xmax=precisMort1[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Tree Mortality Rate White/Red/Jack Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMort5 <- read.csv("precisValsMort5.csv")
+precisMort5[,1]<-F5LabelsMort
+#subset to only predictor variables
+precisMort5 <- precisMort5[c(1:24,36:46),]
+#plot
+ggplot(precisMort5, aes(x=precisMort5[[2]], y=factor(1:nrow(precisMort5),level=nrow(precisMort5):1,labels = rev(precisMort5[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMort5[[4]],xmax=precisMort5[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Tree Mortality Rate Loblolly/Shortleaf Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMort20 <- read.csv("precisValsMort20.csv")
+precisMort20[,1]<-F20LabelsMort
+#subset to only predictor variables
+precisMort20 <- precisMort20[c(1:36,50:60),]
+#plot
+ggplot(precisMort20, aes(x=precisMort20[[2]], y=factor(1:nrow(precisMort20),level=nrow(precisMort20):1,labels = rev(precisMort20[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMort20[[4]],xmax=precisMort20[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Tree Mortality Rate Oak/Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMort21 <- read.csv("precisValsMort21.csv")
+precisMort21[,1]<-F21LabelsMort
+#subset to only predictor variables
+precisMort21 <- precisMort21[c(1:114,141:152),]
+#plot
+ggplot(precisMort21, aes(x=precisMort21[[2]], y=factor(1:nrow(precisMort21),level=nrow(precisMort21):1,labels = rev(precisMort21[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMort21[[4]],xmax=precisMort21[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Tree Mortality Rate Oak/Hickory")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=10))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMort23 <- read.csv("precisValsMort23.csv")
+precisMort23[,1]<-F23LabelsMort
+#subset to only predictor variables
+precisMort23 <- precisMort23[c(1:54,71:81),]
+#plot
+ggplot(precisMort23, aes(x=precisMort23[[2]], y=factor(1:nrow(precisMort23),level=nrow(precisMort23):1,labels = rev(precisMort23[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMort23[[4]],xmax=precisMort23[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Tree Mortality Rate Elm/Ash/Cottonwood")+theme_classic()+  
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisMort24 <- read.csv("precisValsMort24.csv")
+precisMort24[,1]<-F24LabelsMort
+#subset to only predictor variables
+precisMort24 <- precisMort24[c(1:24,36:47),]
+#plot
+ggplot(precisMort24, aes(x=precisMort24[[2]], y=factor(1:nrow(precisMort24),level=nrow(precisMort24):1,labels = rev(precisMort24[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisMort24[[4]],xmax=precisMort24[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Tree Mortality Rate Maple/Beech/Birch")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+#AQI
+#read in
+precisAQI1 <- read.csv("precisValsAQI1.csv")
+precisAQI1[,1]<-F1Labels
+#subset to only predictor variables
+precisAQI1 <- precisAQI1[c(1:20,31:41),]
+#plot
+par(mar=c(6,6,5,3)+0.1)
+ggplot(precisAQI1, aes(x=precisAQI1[[2]], y=factor(1:nrow(precisAQI1),level=nrow(precisAQI1):1,labels = rev(precisAQI1[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisAQI1[[4]],xmax=precisAQI1[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Air Quality Index White/Red/Jack Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisAQI5 <- read.csv("precisValsAQI5.csv")
+precisAQI5[,1]<-F5Labels
+#subset to only predictor variables
+precisAQI5 <- precisAQI5[c(1:20,31:41),]
+#plot
+ggplot(precisAQI5, aes(x=precisAQI5[[2]], y=factor(1:nrow(precisAQI5),level=nrow(precisAQI5):1,labels = rev(precisAQI5[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisAQI5[[4]],xmax=precisAQI5[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Air Quality Index Loblolly/Shortleaf Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisAQI20 <- read.csv("precisValsAQI20.csv")
+precisAQI20[,1]<-F20Labels
+#subset to only predictor variables
+precisAQI20 <- precisAQI20[c(1:30,43:53),]
+#plot
+ggplot(precisAQI20, aes(x=precisAQI20[[2]], y=factor(1:nrow(precisAQI20),level=nrow(precisAQI20):1,labels = rev(precisAQI20[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisAQI20[[4]],xmax=precisAQI20[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Air Quality Index Oak/Pine")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisAQI21 <- read.csv("precisValsAQI21.csv")
+precisAQI21[,1]<-F21Labels
+#subset to only predictor variables
+precisAQI21 <- precisAQI21[c(1:95,121:132),]
+#plot
+ggplot(precisAQI21, aes(x=precisAQI21[[2]], y=factor(1:nrow(precisAQI21),level=nrow(precisAQI21):1,labels = rev(precisAQI21[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisAQI21[[4]],xmax=precisAQI21[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Air Quality Index Oak/Hickory")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=10))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisAQI23 <- read.csv("precisValsAQI23.csv")
+precisAQI23[,1]<-F23Labels
+#subset to only predictor variables
+precisAQI23 <- precisAQI23[c(1:45,61:71),]
+#plot
+ggplot(precisAQI23, aes(x=precisAQI23[[2]], y=factor(1:nrow(precisAQI23),level=nrow(precisAQI23):1,labels = rev(precisAQI23[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisAQI23[[4]],xmax=precisAQI23[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Air Quality Index Elm/Ash/Cottonwood")+theme_classic()+  
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+
+precisAQI24 <- read.csv("precisValsAQI24.csv")
+precisAQI24[,1]<-F24Labels
+#subset to only predictor variables
+precisAQI24 <- precisAQI24[c(1:20,31:42),]
+#plot
+ggplot(precisAQI24, aes(x=precisAQI24[[2]], y=factor(1:nrow(precisAQI24),level=nrow(precisAQI24):1,labels = rev(precisAQI24[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisAQI24[[4]],xmax=precisAQI24[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Air Quality Index Maple/Beech/Birch")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
+#SQI
+precisSQI <- read.csv("precisValsSQI.csv")
+precisSQI[,1]<-SQILabels
+#subset to only predictor variables
+precisSQI <- precisSQI[c(1:60,79:89),]
+#plot
+ggplot(precisSQI, aes(x=precisSQI[[2]], y=factor(1:nrow(precisSQI),level=nrow(precisSQI):1,labels = rev(precisSQI[[1]]))))+
+  geom_vline(xintercept = 0, linetype=1, color ="black") +
+  geom_point(size=2) +
+  geom_errorbar(aes(xmin=precisSQI[[4]],xmax=precisSQI[[5]]), linewidth=0.7)+
+  labs(x="Effect Size", y="", title="Parameter Estimates, Soil Quality Index All Forest Groups")+theme_classic()+
+  theme(axis.text.x = element_text(size=16))+
+  theme(axis.text.y = element_text(size=16))+
+  theme(plot.title = element_text(hjust=0.5))
