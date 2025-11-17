@@ -10968,8 +10968,8 @@ SQIdata <- na.omit(SQIdata)
 ##Lastly, subset plots within MidAtlantic Ecoregion area
 #overlap with state boundaries
 #read in regional shapefile
-midatlmap <- vect("/Users/DamaniEubanks/Desktop/FIA/MARshape/v10/mid-atlantic_and_new_england.gdb")
-setwd("~/Desktop/FIA/WI")
+midatlmap <- vect("/ForestHealthModelData/MARshape/v10/mid-atlantic_and_new_england.gdb")
+setwd("~/Desktop/ForestHealthModelData/cb_2021_us_state_500k")
 spUSA <- shapefile("cb_2021_us_state_500k.shp")
 #Clip shapefile to only midatl
 midcut <- subset(spUSA, NAME%in%c("Maryland","New Jersey","New York","Delaware","Pennsylvania"))
@@ -10977,7 +10977,7 @@ midcut <- vect(midcut)
 midcut <- project(midcut, crs(midatlmap))
 ex <- terra::ext(midcut)
 #re read regional shapefile with extent
-midatlmap <- vect("/Users/DamaniEubanks/Desktop/FIA/MARshape/v10/mid-atlantic_and_new_england.gdb",extent=ex)
+midatlmap <- vect("/ForestHealthModelData/MARshape/v10/mid-atlantic_and_new_england.gdb",extent=ex)
 #overlap full states with region map, plot for figure
 par(mar=c(5,6,4,2)+.1)
 #mgp(title=5)
@@ -10986,9 +10986,9 @@ plot(midcut,add=TRUE)
 
 
 # Load the regional map
-midatlmap <- vect("/Users/DamaniEubanks/Desktop/FIA/MARshape/v10/mid-atlantic_and_new_england.gdb")
+midatlmap <- vect("/ForestHealthModelData/MARshape/v10/mid-atlantic_and_new_england.gdb")
 # Load and subset US states
-setwd("~/Desktop/FIA/WI")
+setwd("~/Desktop/ForestHealthModelData/cb_2021_us_state_500k")
 spUSA <- vect("cb_2021_us_state_500k.shp")
 midcut <- subset(spUSA ,spUSA$NAME %in% c("Maryland", "New Jersey", "New York", "Delaware", "Pennsylvania"))
 # Reproject to match CRS
