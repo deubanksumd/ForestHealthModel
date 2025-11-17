@@ -4862,10 +4862,10 @@ CombSQI + plot_layout(axis_titles = "collect") + plot_annotation(tag_levels = 'A
 
 #Percent Change/Cumulative Change Calc
 # Load the regional map
-midatlmap <- vect("/Users/DamaniEubanks/Desktop/FIA/MARshape/v10/mid-atlantic_and_new_england.gdb")
+midatlmap <- vect("/ForestHealthModelData/MARshape/v10/mid-atlantic_and_new_england.gdb")
 
 # Load and subset US states
-setwd("~/Desktop/FIA/WI")
+setwd("~/Desktop/ForestHealthModelData/cb_2021_us_state_500k")
 spUSA <- vect("cb_2021_us_state_500k.shp")
 midcut <- subset(spUSA ,spUSA$NAME %in% c("Maryland", "New Jersey", "New York", "Delaware", "Pennsylvania"))
 
